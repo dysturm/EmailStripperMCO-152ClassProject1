@@ -14,7 +14,7 @@ public class JUnitTests {
     @Test
     void PopEmailClientTest(){
 
-        assertTrue(PopEmailClient.openServerConnection("pop.aol.com", "dysturm99@aol.com", "money9999"));
+        assertTrue(PopEmailClient.openServerConnection("pop.aol.com", "dysturm99@aol.com", "*******"));
 
 
     }
