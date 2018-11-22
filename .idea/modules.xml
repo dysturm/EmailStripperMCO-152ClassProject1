@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EmailStripperMCO-152ClassProject1.iml" filepath="$PROJECT_DIR$/EmailStripperMCO-152ClassProject1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/touro.iml" filepath="$PROJECT_DIR$/.idea/modules/touro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/touro_main.iml" filepath="$PROJECT_DIR$/.idea/modules/touro_main.iml" group="touro" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/touro_test.iml" filepath="$PROJECT_DIR$/.idea/modules/touro_test.iml" group="touro" />
     </modules>
   </component>
 </project>
