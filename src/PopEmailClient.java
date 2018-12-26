@@ -1,3 +1,5 @@
+import org.docx4j.wml.Body;
+
 import java.io.IOException;
 import java.util.Properties;
 
@@ -109,35 +111,46 @@ public class PopEmailClient {
     }
 
     public static String getPlainTextFromMessage (Message message) throws MessagingException, IOException {
-        String result = "";
+        String result = null;
         if (message.isMimeType("text/plain")) {
             result = message.getContent().toString();
         } else if (message.isMimeType("multipart/*")) {
             MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
-            result = mimeMultipart.getBodyPart(0).getContent().toString();
+
+            for (int i = 0; i < mimeMultipart.getCount(); i++) {
+                BodyPart bodyPart = mimeMultipart.getBodyPart(i);
+                if (bodyPart.isMimeType("text/plain"))
+                    result = bodyPart.getContent().toString();
+            }
         }
         return result;
     }
 
-    public static String getBodyPartTextFromMessage (Message message, String typeCID) throws MessagingException, IOException {
-        String result = "";
+    public static String getHTMLFromMessage(Message message) throws MessagingException, IOException {
+        String result = null;
         if (message.isMimeType("text/plain")) {
+            //System.out.println("message is plain text");
             result = message.getContent().toString();
         } else if (message.isMimeType("multipart/*")) {
+            //System.out.println("message is multipart");
             MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
-            result = (String) mimeMultipart.getBodyPart(typeCID).getContent();
+            for (int i = 0; i < mimeMultipart.getCount(); i++) {
+                BodyPart bodyPart = mimeMultipart.getBodyPart(i);
+                if (bodyPart.isMimeType("text/html"))
+                    result = bodyPart.getContent().toString();
+            }
         }
         return result;
     }
 
 
-    private static String getTextFromMessage(Message message) throws MessagingException, IOException {
+    public static String getTextFromMessage(Message message) throws MessagingException, IOException {
         String result = "";
         if (message.isMimeType("text/plain")) {
-            //System.out.println("Content is text/plain");
+            System.out.println("Content is text/plain");
             result = message.getContent().toString();
         } else if (message.isMimeType("multipart/*")) {
-            //System.out.println("Content is multipart");
+            System.out.println("Content is multipart");
             MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
             result = getTextFromMimeMultipart(mimeMultipart);
         }
@@ -150,12 +163,12 @@ public class PopEmailClient {
         for (int i = 0; i < count; i++) {
             BodyPart bodyPart = mimeMultipart.getBodyPart(i);
             if (bodyPart.isMimeType("text/html")) {
-                //System.out.println("Body Part #"+ (i + 1) + " is type text/html");
+                System.out.println("Body Part #"+ (i + 1) + " is type text/html");
                 String html = (String) bodyPart.getContent();
                 result = html;
                 //result = result + "\n" + org.jsoup.Jsoup.parse(html).text();
             } else if (bodyPart.getContent() instanceof MimeMultipart){
-                //System.out.println("Body Part #"+ (i + 1) + " is instance of MimeMultipart");
+                System.out.println("Body Part #"+ (i + 1) + " is instance of MimeMultipart");
                 result = result + getTextFromMimeMultipart((MimeMultipart)bodyPart.getContent());
             }
         }

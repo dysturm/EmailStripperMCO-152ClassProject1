@@ -4,7 +4,7 @@ public class HTMLString {
             "]><font color='black' size='2' face='Times New Roman'>\n" +
             "<div style=\"font-family:Times New Roman,helvetica;font-size:10pt;color:black\">\n" +
             "<div id=\"yiv2320676514\"><font color=\"black\" size=\"2\" face=\"Times New Roman\">\n" +
-            "<div class=\"yiv2320676514MsoNormal\" style=\"margin:0in 0in 0pt;\"><b><font face=\"Times New Roman\"><font size=\"3\">Patient:<span>&nbsp; </span></font><font size=\"3\">*************</font></font></b></div>\n" +
+            "<div class=\"yiv2320676514MsoNormal\" style=\"margin:0in 0in 0pt;\"><b><font face=\"Times New Roman\"><font size=\"3\">Patient:<span>&nbsp; </span></font><font size=\"3\">Smith, Greg</font></font></b></div>\n" +
             " \n" +
             "<font face=\"Times New Roman\" size=\"3\">\n" +
             "" +
