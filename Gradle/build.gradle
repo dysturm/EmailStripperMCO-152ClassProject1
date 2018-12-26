@@ -1,0 +1,78 @@
+plugins {
+    id 'java'
+}
+
+group 'touro'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['../src']
+        }
+
+        resources {
+            srcDirs = ["../resources"]
+        }
+    }
+
+    test {
+        java {
+            srcDirs = ['../Tests']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            'org.docx4j:docx4j-ImportXHTML:6.0.1',
+            'net.sourceforge.htmlcleaner:htmlcleaner:2.6.1',
+            'org.jsoup:jsoup:1.11.3',
+            'org.apache.poi:poi:3.15-beta1',
+            'org.apache.poi:poi-ooxml:3.15-beta1',
+            'javax.mail:mail:1.4.1'
+    )
+
+    implementation  (
+            group: 'com.google.inject', name: 'guice', version: '4.2.1'
+    )
+
+    testCompile (
+            group: 'junit', name: 'junit', version: '4.12',
+            "org.mockito:mockito-core:2.+",
+            "org.junit.jupiter:junit-jupiter-api:5.3.1"
+    )
+
+    testRuntime(
+            "org.junit.jupiter:junit-jupiter-engine:5.3.1"
+    )
+}
+
+
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    doFirst {
+//        from('../src'){
+//            include '../resources/**/*'
+//        }
+
+        manifest {
+            if (!configurations.compile.isEmpty()) {
+                attributes(
+                        'Class-Path': configurations.compile.collect{it.toURI().toString()}.join(' '),
+                        'Main-Class': 'Main'
+                )
+            }
+        }
+    }
+}

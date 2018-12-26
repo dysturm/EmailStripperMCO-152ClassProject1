@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnitTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-11-27T00:24:04" hostname="DESKTOP-KKKP4H8" time="9.652">
+  <properties/>
+  <testcase name="PopEmailClientTest()" classname="JUnitTests" time="1.415"/>
+  <testcase name="docNameTest()" classname="JUnitTests" time="0.027"/>
+  <testcase name="patientNameFromHTMLTest()" classname="JUnitTests" time="0.017"/>
+  <testcase name="Docx4JConverterTest()" classname="JUnitTests" time="8.175"/>
+  <testcase name="patientNameTest()" classname="JUnitTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
