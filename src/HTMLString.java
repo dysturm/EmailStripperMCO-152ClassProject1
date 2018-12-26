@@ -10,7 +10,7 @@ public class HTMLString {
             "" +
             "</font>\n" +
             "\n" +
-            "<div class=\"yiv2320676514MsoNormal\" style=\"margin:0in 0in 0pt;\"><font face=\"Times New Roman\"><b><font size=\"3\">Mod/Unit/Pin:</font></b><font size=\"3\"> </font><span><font size=\"3\">&nbsp;&nbsp;</font></span><font size=\"3\">********</font><span><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></span><font size=\"3\">DOB: </font><font size=\"3\"><b>6/18/79</b></font></font></div>\n" +
+            "<div class=\"yiv2320676514MsoNormal\" style=\"margin:0in 0in 0pt;\"><font face=\"Times New Roman\"><b><font size=\"3\">Mod/Unit/Pin:</font></b><font size=\"3\"> </font><span><font size=\"3\">&nbsp;&nbsp;</font></span><font size=\"3\">********</font><span><font size=\"3\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></span><font size=\"3\">DOB: </font><font size=\"3\"><b>********</b></font></font></div>\n" +
             " \n" +
             "<font face=\"Times New Roman\" size=\"3\">\n" +
             "\n" +
