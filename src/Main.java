@@ -26,7 +26,7 @@ public class Main {
         UIManager.put("OptionPane.buttonFont", msgFont);
 
         //allow user to choose app version
-        String calcVersion = (String) JOptionPane.showInputDialog(null,
+        String appVersion = (String) JOptionPane.showInputDialog(null,
                 "Please select the app version:",
                 "Select Version",
                 JOptionPane.QUESTION_MESSAGE,
@@ -34,10 +34,10 @@ public class Main {
                 Version.DISPLAY_OPTIONS,
                 Version.DISPLAY_OPTIONS[1]);
 
-        if (calcVersion != null) {
+        if (appVersion != null) {
             if (calcVersion.equals(Version.GUI))
                 runGUIVersion();
-            else if (calcVersion.equals(Version.CONSOLE)) {
+            else if (appVersion.equals(Version.CONSOLE)) {
                 int useDefaults = JOptionPane.showConfirmDialog(null,
                         "Would you like to use default connection settings?",
                         "Select Preferences",
