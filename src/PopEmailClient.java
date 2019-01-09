@@ -1,10 +1,9 @@
-import org.docx4j.wml.Body;
 
 import java.io.IOException;
 import java.util.Properties;
-
 import javax.mail.*;
 import javax.mail.internet.MimeMultipart;
+
 
 public class PopEmailClient {
 
@@ -47,6 +46,82 @@ public class PopEmailClient {
         emailFolder.close(useExpunge);
         store.close();
     }
+
+
+    public static String getPlainTextFromMessage (Message message) throws MessagingException, IOException {
+        String result = null;
+        if (message.isMimeType("text/plain")) {
+            result = message.getContent().toString();
+        } else if (message.isMimeType("multipart/*")) {
+            MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
+
+            for (int i = 0; i < mimeMultipart.getCount(); i++) {
+                BodyPart bodyPart = mimeMultipart.getBodyPart(i);
+                if (bodyPart.isMimeType("text/plain"))
+                    result = bodyPart.getContent().toString();
+            }
+        }
+        return result;
+    }
+
+    public static String getHTMLFromMessage(Message message) throws MessagingException, IOException {
+        String result = null;
+        if (message.isMimeType("text/plain")) {
+            //System.out.println("message is plain text");
+            result = message.getContent().toString();
+        } else if (message.isMimeType("multipart/*")) {
+            //System.out.println("message is multipart");
+            MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
+            for (int i = 0; i < mimeMultipart.getCount(); i++) {
+                BodyPart bodyPart = mimeMultipart.getBodyPart(i);
+                if (bodyPart.isMimeType("text/html"))
+                    result = bodyPart.getContent().toString();
+            }
+        }
+        return result;
+    }
+
+
+    public static String getTextFromMessage(Message message) throws MessagingException, IOException {
+        String result = "";
+        if (message.isMimeType("text/plain")) {
+            //System.out.println("Content is text/plain");
+            result = message.getContent().toString();
+        } else if (message.isMimeType("multipart/*")) {
+            //System.out.println("Content is multipart");
+            MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
+            result = getTextFromMimeMultipart(mimeMultipart);
+        }
+        return result;
+    }
+
+    private static String getTextFromMimeMultipart(MimeMultipart mimeMultipart)  throws MessagingException, IOException {
+        String result = "";
+        int count = mimeMultipart.getCount();
+        for (int i = 0; i < count; i++) {
+            BodyPart bodyPart = mimeMultipart.getBodyPart(i);
+            if (bodyPart.isMimeType("text/html")) {
+                //System.out.println("Body Part #"+ (i + 1) + " is type text/html");
+                String html = (String) bodyPart.getContent();
+                result = html;
+                //result = result + "\n" + org.jsoup.Jsoup.parse(html).text();
+            } else if (bodyPart.getContent() instanceof MimeMultipart){
+                //System.out.println("Body Part #"+ (i + 1) + " is instance of MimeMultipart");
+                result = result + getTextFromMimeMultipart((MimeMultipart)bodyPart.getContent());
+            }
+        }
+        return result;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -110,71 +185,6 @@ public class PopEmailClient {
         }
     }
 
-    public static String getPlainTextFromMessage (Message message) throws MessagingException, IOException {
-        String result = null;
-        if (message.isMimeType("text/plain")) {
-            result = message.getContent().toString();
-        } else if (message.isMimeType("multipart/*")) {
-            MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
-
-            for (int i = 0; i < mimeMultipart.getCount(); i++) {
-                BodyPart bodyPart = mimeMultipart.getBodyPart(i);
-                if (bodyPart.isMimeType("text/plain"))
-                    result = bodyPart.getContent().toString();
-            }
-        }
-        return result;
-    }
-
-    public static String getHTMLFromMessage(Message message) throws MessagingException, IOException {
-        String result = null;
-        if (message.isMimeType("text/plain")) {
-            //System.out.println("message is plain text");
-            result = message.getContent().toString();
-        } else if (message.isMimeType("multipart/*")) {
-            //System.out.println("message is multipart");
-            MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
-            for (int i = 0; i < mimeMultipart.getCount(); i++) {
-                BodyPart bodyPart = mimeMultipart.getBodyPart(i);
-                if (bodyPart.isMimeType("text/html"))
-                    result = bodyPart.getContent().toString();
-            }
-        }
-        return result;
-    }
-
-
-    public static String getTextFromMessage(Message message) throws MessagingException, IOException {
-        String result = "";
-        if (message.isMimeType("text/plain")) {
-            System.out.println("Content is text/plain");
-            result = message.getContent().toString();
-        } else if (message.isMimeType("multipart/*")) {
-            System.out.println("Content is multipart");
-            MimeMultipart mimeMultipart = (MimeMultipart) message.getContent();
-            result = getTextFromMimeMultipart(mimeMultipart);
-        }
-        return result;
-    }
-
-    private static String getTextFromMimeMultipart(MimeMultipart mimeMultipart)  throws MessagingException, IOException {
-        String result = "";
-        int count = mimeMultipart.getCount();
-        for (int i = 0; i < count; i++) {
-            BodyPart bodyPart = mimeMultipart.getBodyPart(i);
-            if (bodyPart.isMimeType("text/html")) {
-                System.out.println("Body Part #"+ (i + 1) + " is type text/html");
-                String html = (String) bodyPart.getContent();
-                result = html;
-                //result = result + "\n" + org.jsoup.Jsoup.parse(html).text();
-            } else if (bodyPart.getContent() instanceof MimeMultipart){
-                System.out.println("Body Part #"+ (i + 1) + " is instance of MimeMultipart");
-                result = result + getTextFromMimeMultipart((MimeMultipart)bodyPart.getContent());
-            }
-        }
-        return result;
-    }
-
     public static String getEmailTextForSpecificMessage(int emailNum) {
         String host = "pop.aol.com";// change accordingly
         String mailStoreType = "pop3";
@@ -182,10 +192,6 @@ public class PopEmailClient {
         String password = "**********";// change accordingly
 
         return getEmailText(host, mailStoreType, username, password, emailNum);
-    }
-
-    public static String getNextEmail(){
-        return "";
     }
 
     public static String getEmailText(String host, String storeType, String user,

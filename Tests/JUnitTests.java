@@ -44,7 +44,7 @@ public class JUnitTests {
         if (file.exists())
             file.delete();
 
-        Docx4jConverter.convertHTMLStringToMSWordDocx("<html><div style=\"text-align:center;color:red\"><b>hello, world</b></div></html>", root, fileName);
+        Docx4jConverter.convertHTMLStringToMSWordDocx("<html><div style=\"text-align:center;color:red; font-weight:bold\"><b>hello again</b></div></html>", root, fileName);
 
         File newdoc = new File(root + fileName);
 

@@ -55,19 +55,19 @@ public class DocumentHandler {
     protected static String checkForPrevious(String fileName, String root) {
         int counter = 2;
 
-        File file = new File(root + fileName);
+        File file = new File(root + fileName + ".docx");
 
         //check if filename already exists
         if (file.exists()) {
 
             //first check if subsequent files are saved without the '#' symbol
-            file = new File(root + fileName + " " + counter);
+            file = new File(root + fileName + " " + counter + ".docx");
 
             if (file.exists()) {
 
                 //if they are, find the next available number
                 do {
-                    file = new File(root + fileName + " " + ++counter);
+                    file = new File(root + fileName + " " + ++counter + ".docx");
                 } while (file.exists());
 
                 fileName = fileName + " " + counter;
@@ -75,11 +75,11 @@ public class DocumentHandler {
 
             //if not, then proceed to save file with the '#' symbol, at the next available number
             else {
-                file = new File(root + fileName + " #" + counter);
+                file = new File(root + fileName + " #" + counter + ".docx");
 
                 if (file.exists()) {
                     do {
-                        file = new File(root + fileName + " #" + ++counter);
+                        file = new File(root + fileName + " #" + ++counter + ".docx");
                     } while (file.exists());
                 }
 

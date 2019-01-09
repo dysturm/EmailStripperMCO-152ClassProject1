@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c78d5dff-af28-40d0-9edc-2a96d883a23c" name="Default Changelist" comment="" />
+    <list default="true" id="c78d5dff-af28-40d0-9edc-2a96d883a23c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Version.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/out/production/classes/Docx4jConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Gradle/out/production/classes/Docx4jConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/out/production/classes/HTMLString.class" beforeDir="false" afterPath="$PROJECT_DIR$/Gradle/out/production/classes/HTMLString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/out/production/classes/HTMLStringCleaner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/out/production/classes/MSWordDocumentCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/out/production/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Gradle/out/production/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/out/production/classes/Test$TestInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/out/production/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gradle/out/test/classes/JUnitTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Gradle/out/test/classes/JUnitTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/JUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/JUnitTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DocumentHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DocumentHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Docx4jConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Docx4jConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTMLStringCleaner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MSWordDocumentCreator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PopEmailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PopEmailClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Gradle/.gradle/" />
     <ignored path="$PROJECT_DIR$/Gradle/build/" />
@@ -52,7 +71,7 @@
     <session id="-1941003802">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
@@ -60,10 +79,11 @@
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,7 +92,7 @@
           <entry key="conf" value="3" />
           <entry key="fxml" value="1" />
           <entry key="gradle" value="5" />
-          <entry key="java" value="37" />
+          <entry key="java" value="42" />
           <entry key="properties" value="1" />
           <entry key="xml" value="3" />
         </counts>
@@ -82,7 +102,7 @@
           <entry key="CLASS" value="3" />
           <entry key="Groovy" value="5" />
           <entry key="HOCON" value="2" />
-          <entry key="JAVA" value="37" />
+          <entry key="JAVA" value="42" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="4" />
@@ -92,7 +112,7 @@
         <counts>
           <entry key="conf" value="16" />
           <entry key="gradle" value="134" />
-          <entry key="java" value="13659" />
+          <entry key="java" value="15091" />
           <entry key="txt" value="67" />
           <entry key="xml" value="42" />
         </counts>
@@ -101,7 +121,7 @@
         <counts>
           <entry key="Groovy" value="134" />
           <entry key="HOCON" value="9" />
-          <entry key="JAVA" value="13659" />
+          <entry key="JAVA" value="15091" />
           <entry key="PLAIN_TEXT" value="74" />
           <entry key="XML" value="42" />
         </counts>
@@ -110,23 +130,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="102">
+              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1802#1803#0" expanded="true" />
+                <element signature="e#1837#1838#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HTMLString.java">
+        <entry file="file://$PROJECT_DIR$/src/Version.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="154" selection-start-line="6" selection-start-column="154" selection-end-line="6" selection-end-column="154" />
+            <state relative-caret-position="119">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -134,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Docx4jConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="73" selection-end-column="16" />
+            <state relative-caret-position="-51">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,19 +166,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/log4j.xml">
+        <entry file="file://$PROJECT_DIR$/src/GUIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4182">
-              <caret line="246" column="26" selection-start-line="246" selection-start-column="26" selection-end-line="246" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/xhtmlrenderer.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+            <state relative-caret-position="1071">
+              <caret line="68" column="63" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,8 +180,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DocumentHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="772">
+              <caret line="81" column="84" selection-start-line="81" selection-start-column="84" selection-end-line="81" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,19 +199,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PopEmailClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1802">
-              <caret line="112" column="37" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="37" />
+            <state relative-caret-position="-2408">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,11 +210,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/JUnitTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="46" column="122" selection-start-line="46" selection-start-column="122" selection-end-line="46" selection-end-column="122" />
+            <state relative-caret-position="68">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -606,7 +613,6 @@
         <option value="$PROJECT_DIR$/src/PopEmailCommunicator.java" />
         <option value="$PROJECT_DIR$/src/FileNameStrings.java" />
         <option value="$PROJECT_DIR$/src/HTMLCleaner.java" />
-        <option value="$PROJECT_DIR$/src/HTMLStringCleaner.java" />
         <option value="$PROJECT_DIR$/src/Configuration.fxml" />
         <option value="$PROJECT_DIR$/Resources/log4j.xml" />
         <option value="$PROJECT_DIR$/resources/docx4j.properties" />
@@ -614,23 +620,24 @@
         <option value="$PROJECT_DIR$/src/HTMLString.java" />
         <option value="$PROJECT_DIR$/Gradle/build.gradle" />
         <option value="$PROJECT_DIR$/src/Test.java" />
-        <option value="$PROJECT_DIR$/src/PopEmailClient.java" />
         <option value="$PROJECT_DIR$/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/resources/xhtmlrenderer.conf" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/GUIController.java" />
-        <option value="$PROJECT_DIR$/src/Docx4jConverter.java" />
         <option value="$PROJECT_DIR$/src/SearchTags.java" />
-        <option value="$PROJECT_DIR$/src/DocumentHandler.java" />
+        <option value="$PROJECT_DIR$/src/Version.java" />
+        <option value="$PROJECT_DIR$/src/HTMLStringCleaner.java" />
         <option value="$PROJECT_DIR$/Tests/JUnitTests.java" />
+        <option value="$PROJECT_DIR$/src/PopEmailClient.java" />
+        <option value="$PROJECT_DIR$/src/DocumentHandler.java" />
+        <option value="$PROJECT_DIR$/src/Docx4jConverter.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="30" />
-    <option name="width" value="1890" />
-    <option name="height" value="930" />
+    <option name="x" value="-92" />
+    <option name="width" value="947" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -640,6 +647,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -680,7 +688,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -688,7 +695,8 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545867605206" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546996261491" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -718,7 +726,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JUnitTests.Docx4JConverterTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="touro_main" />
@@ -775,8 +783,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JUnitTests.Docx4JConverterTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.JUnitTests.Docx4JConverterTest" />
         <item itemvalue="JUnit.JUnitTests.patientNameTest" />
         <item itemvalue="JUnit.JUnitTests.spaceCharTest" />
         <item itemvalue="JUnit.JUnitTests.PopEmailClientTest" />
@@ -812,21 +820,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JUnitTests_Docx4JConverterTest - 2018.12.15 at 19h 16m 57s.xml">
-      <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTests_Docx4JConverterTest - 2018.12.15 at 19h 18m 17s.xml">
-      <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTests_Docx4JConverterTest - 2018.12.15 at 19h 19m 15s.xml">
-      <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTests_patientNameTest - 2018.12.15 at 20h 39m 58s.xml">
-      <configuration name="JUnitTests.patientNameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTests_patientNameTest - 2018.12.15 at 20h 40m 35s.xml">
-      <configuration name="JUnitTests.patientNameTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JUnitTests_Docx4JConverterTest - 2018.12.16 at 19h 57m 09s.xml">
       <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
     </history-entry>
@@ -842,6 +835,21 @@
     <history-entry file="JUnitTests_Docx4JConverterTest - 2018.12.26 at 18h 30m 13s.xml">
       <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JUnitTests_Docx4JConverterTest - 2018.12.26 at 18h 52m 56s.xml">
+      <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTests_Docx4JConverterTest - 2018.12.26 at 18h 54m 37s.xml">
+      <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTests_Docx4JConverterTest - 2019.01.08 at 16h 13m 48s.xml">
+      <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTests_Docx4JConverterTest - 2019.01.08 at 16h 15m 39s.xml">
+      <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTests_Docx4JConverterTest - 2019.01.08 at 16h 33m 17s.xml">
+      <configuration name="JUnitTests.Docx4JConverterTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -854,8 +862,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17246963" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18866397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -863,14 +872,14 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.69982237" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.36589697" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49959514" weight="0.69982237" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49716598" visible="true" weight="0.3250444" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" visible="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502834" side_tool="true" weight="0.36589697" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3285968" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.3285968" />
@@ -882,7 +891,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Gradle" order="8" visible="true" weight="0.17489879" />
+      <window_info anchor="right" id="Gradle" order="8" weight="0.29793105" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -915,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSWordDocumentCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar!/org/apache/log4j/PropertyConfigurator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3627">
@@ -933,13 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="649" column="19" selection-start-line="649" selection-start-column="13" selection-end-line="649" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HTMLStringCleaner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1001,40 +996,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="185" column="54" selection-start-line="185" selection-start-column="54" selection-end-line="185" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HTMLString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="154" selection-start-line="6" selection-start-column="154" selection-end-line="6" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Docx4jConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="73" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1052,10 +1017,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DocumentHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/MSWordDocumentCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HTMLStringCleaner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/JUnitTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1069,29 +1055,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/Version.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="119">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PopEmailClient.java">
+    <entry file="file://$PROJECT_DIR$/src/DocumentHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="112" column="37" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="37" />
+        <state relative-caret-position="772">
+          <caret line="81" column="84" selection-start-line="81" selection-start-column="84" selection-end-line="81" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/JUnitTests.java">
+    <entry file="file://$PROJECT_DIR$/src/GUIController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="46" column="122" selection-start-line="46" selection-start-column="122" selection-end-line="46" selection-end-column="122" />
+        <state relative-caret-position="1071">
+          <caret line="68" column="63" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Docx4jConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PopEmailClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2408">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1802#1803#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
           </folding>
         </state>
       </provider>

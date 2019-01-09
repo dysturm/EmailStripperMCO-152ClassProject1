@@ -1,11 +1,6 @@
-import org.apache.log4j.Level;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-import org.docx4j.XmlUtils;
 import org.docx4j.convert.in.xhtml.XHTMLImporterImpl;
 import org.docx4j.jaxb.Context;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
-import org.docx4j.org.xhtmlrenderer.util.XRLog;
 import org.docx4j.wml.RFonts;
 
 import java.util.List;
@@ -13,22 +8,7 @@ import java.util.List;
 
 public class Docx4jConverter {
 
-    private static final Logger logger = LogManager.getLogger(Docx4jConverter.class);
-
-/*    static {
-        //turn off console logging of log4j
-        Logger.getRootLogger().setLevel(Level.OFF);
-        logger.setLevel(Level.OFF);
-        XRLog.setLoggingEnabled(false);
-
-    }*/
-
-    public static boolean convertHTMLStringToMSWordDocx (String htmlString,String rootFolder, String fileName) throws Exception {
-
-/*        Logger.getRootLogger().setLevel(Level.OFF);
-        logger.setLevel(Level.OFF);
-        XRLog.setLoggingEnabled(false);*/
-        String baseURL = "file:///C:/Users/dystu/Documents/";
+    public static boolean convertHTMLStringToMSWordDocx (String htmlString, String rootFolder, String fileName) throws Exception {
 
         //print out original html string
         //System.out.println("HTML: " + htmlString);
@@ -47,7 +27,7 @@ public class Docx4jConverter {
 
         //add html string into word template
         wordMLPackage.getMainDocumentPart().getContent().addAll(
-                XHTMLImporter.convert(htmlString, baseURL) );
+                XHTMLImporter.convert(htmlString, rootFolder) );
 
 
         // Get paragraphs
@@ -70,8 +50,8 @@ public class Docx4jConverter {
         }
 
         //print rendered xhtml in word-html-format
-        System.out.println(
-                XmlUtils.marshaltoString(wordMLPackage.getMainDocumentPart().getJaxbElement(), true, true));
+//        System.out.println(
+//                XmlUtils.marshaltoString(wordMLPackage.getMainDocumentPart().getJaxbElement(), true, true));
 
         //create new word docx
         wordMLPackage.save(new java.io.File(rootFolder + fileName) );
