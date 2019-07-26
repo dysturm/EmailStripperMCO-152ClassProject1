@@ -1,0 +1,94 @@
+Manifest-Version: 1.0
+Class-Path: file:/C:/Users/dystu/.gradle/caches/modules-2/files-2.1/or
+ g.docx4j/docx4j-ImportXHTML/6.0.1/a06bb2abc2db78fb5e3dd8e775765ea3477
+ f62d0/docx4j-ImportXHTML-6.0.1.jar file:/C:/Users/dystu/.gradle/cache
+ s/modules-2/files-2.1/net.sourceforge.htmlcleaner/htmlcleaner/2.6.1/1
+ ba0657485df82e6e2a41a498d9b101bfac82d23/htmlcleaner-2.6.1.jar file:/C
+ :/Users/dystu/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.11
+ .3/36da09a8f68484523fa2aaa100399d612b247d67/jsoup-1.11.3.jar file:/C:
+ /Users/dystu/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-oo
+ xml/3.15-beta1/81085a47fdf0d74d473d605c6b3784e26731842e/poi-ooxml-3.1
+ 5-beta1.jar file:/C:/Users/dystu/.gradle/caches/modules-2/files-2.1/o
+ rg.apache.poi/poi/3.15-beta1/48bb8326b81323631d9ceb4236cfbd382e56da2/
+ poi-3.15-beta1.jar file:/C:/Users/dystu/.gradle/caches/modules-2/file
+ s-2.1/javax.mail/mail/1.4.1/8b7bc69010655425dabf091b51d1e90b4de36715/
+ mail-1.4.1.jar file:/C:/Users/dystu/.gradle/caches/modules-2/files-2.
+ 1/org.docx4j/xhtmlrenderer/3.0.0/14c766017bd26c1b1f96f170833845bc1bab
+ 6aeb/xhtmlrenderer-3.0.0.jar file:/C:/Users/dystu/.gradle/caches/modu
+ les-2/files-2.1/org.docx4j/docx4j/6.0.1/e2fd35d0c20b96b42362ee26a2f2e
+ 9740ac57786/docx4j-6.0.1.jar file:/C:/Users/dystu/.gradle/caches/modu
+ les-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.25/f8c32b13ff142a513eeb5
+ b6330b1588dcb2c0461/jcl-over-slf4j-1.7.25.jar file:/C:/Users/dystu/.g
+ radle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.7.25/110ce
+ fe2df103412849d72ef7a67e4e91e4266b4/slf4j-log4j12-1.7.25.jar file:/C:
+ /Users/dystu/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1
+ .7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar f
+ ile:/C:/Users/dystu/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2
+ /2.0.5/2001db51c131e555bafdb77fc52af6a9408c505e/jdom2-2.0.5.jar file:
+ /C:/Users/dystu/.gradle/caches/modules-2/files-2.1/org.apache.httpcom
+ ponents/httpclient/4.5.6/1afe5621985efe90a92d0fbc9be86271efbe796f/htt
+ pclient-4.5.6.jar file:/C:/Users/dystu/.gradle/caches/modules-2/files
+ -2.1/commons-codec/commons-codec/1.11/3acb4705652e16236558f0f4f2192cc
+ 33c3bd189/commons-codec-1.11.jar file:/C:/Users/dystu/.gradle/caches/
+ modules-2/files-2.1/org.apache.poi/poi-ooxml-schemas/3.15-beta1/f8bc9
+ 79ad79908a99483337f1ca2edf78558ac20/poi-ooxml-schemas-3.15-beta1.jar 
+ file:/C:/Users/dystu/.gradle/caches/modules-2/files-2.1/com.github.vi
+ rtuald/curvesapi/1.03/6b0977602901464b056959027fdf2396050f9dd2/curves
+ api-1.03.jar file:/C:/Users/dystu/.gradle/caches/modules-2/files-2.1/
+ javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508
+ b50/activation-1.1.jar file:/C:/Users/dystu/.gradle/caches/modules-2/
+ files-2.1/com.lowagie/itext/2.1.7/892bfb3e97074a61123b3b2d7caa2db1127
+ 50864/itext-2.1.7.jar file:/C:/Users/dystu/.gradle/caches/modules-2/f
+ iles-2.1/org.plutext/jaxb-svg11/1.0.2/3c0cd54d5691f5b5f8c60ed0c06353f
+ f1db424e1/jaxb-svg11-1.0.2.jar file:/C:/Users/dystu/.gradle/caches/mo
+ dules-2/files-2.1/net.engio/mbassador/1.2.4.2/d37a8bd6182229f72d4419d
+ e427d7a8cf81b05c0/mbassador-1.2.4.2.jar file:/C:/Users/dystu/.gradle/
+ caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8
+ 069c0746e8b08629f/log4j-1.2.17.jar file:/C:/Users/dystu/.gradle/cache
+ s/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89
+ bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar file:/C:/Users/d
+ ystu/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-co
+ mpress/1.12/84caa68576e345eb5e7ae61a0e5a9229eb100d7b/commons-compress
+ -1.12.jar file:/C:/Users/dystu/.gradle/caches/modules-2/files-2.1/org
+ .apache.xmlgraphics/xmlgraphics-commons/2.3/f0b77d80c4d8f02538512b4d5
+ 05af0cf5286eb7f/xmlgraphics-commons-2.3.jar file:/C:/Users/dystu/.gra
+ dle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb
+ 95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar file:/C:/Users/dystu/
+ .gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson
+ -databind/2.7.9.4/46bb5f96c2eadd1f1c8b6f20a9c5f0fafe946079/jackson-da
+ tabind-2.7.9.4.jar file:/C:/Users/dystu/.gradle/caches/modules-2/file
+ s-2.1/com.fasterxml.jackson.core/jackson-core/2.7.9/9b530cec4fd2eb841
+ ab8e79f19fc7cf0ec487b2/jackson-core-2.7.9.jar file:/C:/Users/dystu/.g
+ radle/caches/modules-2/files-2.1/org.apache.avalon.framework/avalon-f
+ ramework-impl/4.3.1/2d5f5a07fd14513ce6d7a7bfaff69419c26dbd0b/avalon-f
+ ramework-impl-4.3.1.jar file:/C:/Users/dystu/.gradle/caches/modules-2
+ /files-2.1/org.apache.avalon.framework/avalon-framework-api/4.3.1/2da
+ cadeb49bc14420990b1f28897d46f96e2181d/avalon-framework-api-4.3.1.jar 
+ file:/C:/Users/dystu/.gradle/caches/modules-2/files-2.1/xalan/xalan/2
+ .7.2/d55d3f02a56ec4c25695fe67e1334ff8c2ecea23/xalan-2.7.2.jar file:/C
+ :/Users/dystu/.gradle/caches/modules-2/files-2.1/net.arnx/wmf2svg/0.9
+ .8/365614a3ee72ec475d9032f906d37b753fbe2bfa/wmf2svg-0.9.8.jar file:/C
+ :/Users/dystu/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runt
+ ime/3.5.2/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.
+ 2.jar file:/C:/Users/dystu/.gradle/caches/modules-2/files-2.1/org.ant
+ lr/stringtemplate/3.2.1/59ec8083721eae215c6f3caee944c410d2be34de/stri
+ ngtemplate-3.2.1.jar file:/C:/Users/dystu/.gradle/caches/modules-2/fi
+ les-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1b
+ e7831ef/guava-20.0.jar file:/C:/Users/dystu/.gradle/caches/modules-2/
+ files-2.1/com.thedeanda/lorem/2.1/b8e8864853e1c597b47e5b5d2d9f2b3846c
+ b0837/lorem-2.1.jar file:/C:/Users/dystu/.gradle/caches/modules-2/fil
+ es-2.1/org.apache.xmlbeans/xmlbeans/2.6.0/29e80d2dd51f9dcdef8f9ffaee0
+ d4dc1c9bbfc87/xmlbeans-2.6.0.jar file:/C:/Users/dystu/.gradle/caches/
+ modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.10/acc54d9
+ b28bdffe4bbde89ed2e4a1e86b5285e2b/httpcore-4.4.10.jar file:/C:/Users/
+ dystu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/j
+ ackson-annotations/2.7.0/19f42c154ffc689f40a77613bc32caeb17d744e3/jac
+ kson-annotations-2.7.0.jar file:/C:/Users/dystu/.gradle/caches/module
+ s-2/files-2.1/xalan/serializer/2.7.2/24247f3bb052ee068971393bdb83e045
+ 12bb1c3c/serializer-2.7.2.jar file:/C:/Users/dystu/.gradle/caches/mod
+ ules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351
+ f48bd0/antlr-2.7.7.jar file:/C:/Users/dystu/.gradle/caches/modules-2/
+ files-2.1/stax/stax-api/1.0.1/49c100caf72d658aca8e58bd74a4ba90fa2b0d7
+ 0/stax-api-1.0.1.jar
+Main-Class: Main
+
